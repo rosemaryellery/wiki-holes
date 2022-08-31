@@ -11,3 +11,141 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  padding: .77rem 0;
+  background-color: #31373d;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.88rem;
+  color: #fff;
+}
+
+h1 .highlight {
+  color: #7d8b93;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.55rem;
+}
+
+.App {
+  height: 100%;
+  padding: 0 17% 10% 17%;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: black;
+}
+
+.App-playlist {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .App-playlist {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/*SearchBar Styling*/
+.SearchBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6.94rem;
+  margin-bottom: 6.33rem;
+}
+
+.SearchBar input {
+  width: 350px;
+  padding: .88rem 0;
+  border: 1px solid #31373d;
+  border-radius: 3px;
+  margin-bottom: 2.22rem;
+  color: #31373d;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.SearchBar input:focus {
+  outline: none;
+}
+
+.SearchButton {
+  cursor: pointer;
+  width: 8.11rem;
+  padding: .77rem 0;
+  border-radius: 54px;
+  background-color: #31373d;
+  text-align: center;
+  font-size: .833rem;
+  transition: background-color .25s;
+  border: 0px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.SearchButton:hover {
+  background-color: #7d8b93;
+}
+
+/*SearchResults Styling*/
+.SearchResults {
+  width: 50%;
+  height: 950px;
+  overflow-y: scroll;
+  padding: .88rem;
+  background-color: #31373d;
+  box-shadow: 0 4px 2px 2px #000000;
+  color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@media only screen and (max-width: 1020px) {
+  .SearchResults {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}
+
+/*Result Styling*/
+.Result h3 {
+  margin-bottom: 0;
+}
+
+.Result-snippet {
+  font-weight: lighter;
+}
+
+.Result p .searchmatch{
+  font-weight: 575;
+}
+
+.Result a {
+  margin-bottom: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.Result hr {
+  border-top: 3px solid white;
+  border-radius: 5px;
+}
