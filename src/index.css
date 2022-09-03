@@ -103,6 +103,10 @@ h2 {
   background-color: #7d8b93;
 }
 
+.main {
+  display: flex;
+}
+
 /*SearchResults Styling*/
 .SearchResults {
   width: 50%;
@@ -112,7 +116,20 @@ h2 {
   background-color: #31373d;
   box-shadow: 0 4px 2px 2px #000000;
   color: white;
+  margin-right: 10%;
 }
+
+.Hole {
+  width: 50%;
+  height: 950px;
+  overflow-y: scroll;
+  padding: .88rem;
+  background-color: #31373d;
+  box-shadow: 0 4px 2px 2px #000000;
+  color: white;
+  margin-left: 10%;
+}
+
 
 ::-webkit-scrollbar {
     width: 0px;
