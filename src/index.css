@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 code {
@@ -22,17 +23,31 @@ html {
   font-size: 18px;
 }
 
-h1 {
-  padding: .77rem 0;
+.PageTop {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   background-color: #31373d;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.88rem;
+  font-size: 2rem;
   color: #fff;
+  margin-top: 0;
+
 }
 
-h1 .highlight {
-  color: #7d8b93;
+.PageTitle{
+  padding: 0;
+  margin: 0;
+}
+
+.PageTitle span {
+  color:#7d8b93;
+}
+
+.PageTop p {
+  font-weight: lighter;
+  font-size: 1rem;
+  padding-bottom: 1rem;
 }
 
 h2 {
@@ -66,8 +81,9 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 6.94rem;
-  margin-bottom: 6.33rem;
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  padding: 0;
 }
 
 .SearchBar input {
@@ -75,7 +91,6 @@ h2 {
   padding: .88rem 0;
   border: 1px solid #31373d;
   border-radius: 3px;
-  margin-bottom: 2.22rem;
   color: #31373d;
   text-align: center;
   font-size: 1rem;
@@ -85,7 +100,7 @@ h2 {
   outline: none;
 }
 
-.SearchButton {
+/* .SearchButton {
   cursor: pointer;
   width: 8.11rem;
   padding: .77rem 0;
@@ -101,13 +116,17 @@ h2 {
 
 .SearchButton:hover {
   background-color: #7d8b93;
-}
+} */
 
-.main {
+.Main {
   display: flex;
 }
 
-/*SearchResults Styling*/
+.ArticleList{
+  padding-left: 5%;
+  padding-right: 5%
+}
+
 .SearchResults {
   width: 50%;
   height: 950px;
@@ -117,6 +136,16 @@ h2 {
   box-shadow: 0 4px 2px 2px #000000;
   color: white;
   margin-right: 10%;
+  margin-top: 0;
+  margin-bottom:0;
+}
+
+h2{
+  border-bottom: 1px solid white;
+}
+
+.TotalHits {
+  color:#7d8b93;
 }
 
 .Hole {
@@ -130,6 +159,20 @@ h2 {
   margin-left: 10%;
 }
 
+.Article {
+  border-bottom: 1px solid white;
+  display: flex;
+}
+
+.Article button {
+  border: none;
+  background-color:#31373d;
+  color: white;
+  font-size: 2rem;
+  padding: 5%;
+  font-weight:lighter;
+  cursor: pointer;
+}
 
 ::-webkit-scrollbar {
     width: 0px;
@@ -143,26 +186,33 @@ h2 {
   }
 }
 
-/*Result Styling*/
-.Result h3 {
-  margin-bottom: 0;
-}
-
 .Result-snippet {
   font-weight: lighter;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  text-align: justify;
 }
 
-.Result p .searchmatch{
-  font-weight: 575;
+.Article-title{
+  margin-bottom:0.5rem;
 }
 
-.Result a {
-  margin-bottom: 20px;
-  color: white;
+.Article-information{
+  margin-bottom: 1.5rem;
+}
+
+.ArticleButton {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.3rem;
   text-decoration: none;
+  color:#31373d;
+  font-size: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.Result hr {
-  border-top: 3px solid white;
-  border-radius: 5px;
+.ArticleButton:hover{
+  background-color:#7d8b93;
+  color: white;
 }
