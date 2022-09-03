@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+# Wiki-Holes
+This is a web application where users can organise articles to read ahead of time. Users can search for an article via the Wikipedia API and recieve search results that they can then add to their 'wiki-hole'.
+
+![Project Screenshot](wikiholesappimage.png)
+
+# Installation and Setup
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +73,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Credits
+This project was based on and inspired by a learning project using the Spotify API for creating playlists from the [Full-Stack Engineer Codecademy Course](https://www.codecademy.com/learn/paths/full-stack-engineer-career-path).
