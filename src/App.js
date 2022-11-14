@@ -102,6 +102,7 @@ function App() {
               return(<Article
                     // holeName = {holeName} 
                     key={article.id}
+                    url={url}
                     article={article}
                     articleActionCharacter='-'
                     handleArticleAction={props.removeArticleFromHole} />)
