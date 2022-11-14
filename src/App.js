@@ -99,6 +99,7 @@ function App() {
         <div className='ArticleList'>
           {
             props.articles.map(article => {
+              const url = `https://en.wikipedia.org/?curid=${article.pageid}`;
               return(<Article
                     // holeName = {holeName} 
                     key={article.id}
